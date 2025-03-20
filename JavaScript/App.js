@@ -58,3 +58,62 @@ closeButton.onclick = () => {
     //pause on close
     myvideo.pause();
 }
+
+// Dark Mode Toggle
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+if (themeToggle) {
+    themeToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        body.classList.toggle('light-theme');
+
+        const icon = themeToggle.querySelector('i');
+        if (icon) {
+            icon.classList.toggle('bxs-moon');
+            icon.classList.toggle('bxs-sun');
+        }
+    });
+}
+
+// Back to Top Button
+const backToTop = document.getElementById('backToTop');
+
+if (backToTop) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    });
+
+    backToTop.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// Basic Search Functionality
+const searchInput = document.getElementById('search-input');
+const movieTitles = document.querySelectorAll('.movie-title');
+
+if (searchInput) {
+    searchInput.addEventListener('keyup', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+
+        movieTitles.forEach(title => {
+            const parentBox = title.closest('.movie-box');
+            if (parentBox) {
+                if (title.textContent.toLowerCase().includes(searchTerm)) {
+                    parentBox.style.display = 'block';
+                } else {
+                    parentBox.style.display = 'none';
+                }
+            }
+        });
+    });
+}

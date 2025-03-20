@@ -92,6 +92,54 @@ header {
     color: green;
 }
 
+/* Dark Mode Toggle Styles */
+.bxs-sun {
+    color: #ffb43a;
+    font-size: 1.5rem;
+  }
+  
+  /* Back to Top Button */
+  .back-to-top {
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    background: var(--main-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s all linear;
+    z-index: 1000;
+  }
+  
+  .back-to-top.show {
+    bottom: 20px;
+  }
+  
+  /* Enhanced Hover Effects */
+  .movie-box:hover .box-text {
+    background: linear-gradient(8deg,
+        hsl(240 17% 14% / 90%),
+        hsl(240 17% 14% / 30%));
+    transition: 0.4s all linear;
+  }
+  
+  .search-box:focus-within {
+    outline: 2px solid var(--main-color);
+  }
+  
+  /* Light Theme Variables */
+  body.light-theme {
+    --body-color: #f0f0f0;
+    --container-color: #ffffff;
+    --text-color: #0b0b0b;
+    --main-color: #ff6b6b;
+    --hover-color: #ff5252;
+  }
+
 /* search Box */
 .search-box {
     max-width: 240px;
