@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Universe</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="image/fav-icon.png" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="nav container">
+        <a href="index.html" class="logo">Movies<span>Universe</span></a>
+        <div class="search-box">
+          <input type="search" id="search-input" placeholder="Search Movies" />
+          <i class="bx bx-search"></i>
+        </div>
+        <a href="#" class="user">
+          <img src="image/logo-new1.jpg" alt="User" class="user-img" />
+        </a>
+        <div class="navbar">
+          <a href="index.html" class="nav-link nav-active"
+            ><i class="bx bx-home"></i
+            ><span class="nav-link-title">Home</span></a
+          >
+          <a href="#trending" class="nav-link"
+            ><i class="bx bxs-hot"></i
+            ><span class="nav-link-title">Trending</span></a
+          >
+          <a href="#explore" class="nav-link"
+            ><i class="bx bx-compass"></i
+            ><span class="nav-link-title">Explore</span></a
+          >
+          <a href="#movies" class="nav-link"
+            ><i class="bx bx-tv"></i
+            ><span class="nav-link-title">Movies</span></a
+          >
+          <a href="#favorites" class="nav-link"
+            ><i class="bx bx-heart"></i
+            ><span class="nav-link-title">Favorites</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- play Movie container -->
+    <div class="play-container container">
+      <!-- play image -->
+      <img src="play-page/background-img.jpg" alt="" class="play-img" />
+      <!-- play text -->
+      <div class="play-text">
+        <h2>Venom: The Last Dance</h2>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star-half"></i>
+        </div>
+
+        <!-- tags -->
+        <div class="tags">
+          <span>Action</span>
+          <span>Adventure</span>
+          <span>4k</span>
+        </div>
+        <!-- Trailer Button -->
+        <a href="#" class="watch-btn"
+          ><i class="bx bx-right-arrow"></i><span>Watch The Trailer</span></a
+        >
+      </div>
+
+      <!-- play btn -->
+      <i class="bx bx-right-arrow play-movie"></i>
+
+      <!-- video container -->
+      <div class="video-container">
+        <!-- video box -->
+        <div class="video-box">
+          <video
+            id="myvideo"
+            src="play-page/VENOM - THE LAST DANCE _ OFFICIAL HINDI TRAILER _ In Cinemas October 24.mp4"
+            controls
+          ></video>
+          <!-- close video Icon -->
+          <i class="bx bx-x close-video"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- about movie -->
+    <div class="about-movie container">
+      <h2>Venom: The Last Dance</h2>
+      <p>
+        Eddie Brock and Venom must make a devastating decision as they're
+        pursued by a mysterious military man and alien monsters from Venom's
+        home world.
+      </p>
+
+      <!-- Movie Cast -->
+      <h2 class="cast-heading">Movie Cast</h2>
+      <div class="cast">
+        <div class="cast-box">
+          <img src="play-page/v1.jpg" alt="" class="cast-img" />
+          <span class="cast-title">Tom Hardy</span>
+        </div>
+
+        <div class="cast-box">
+          <img src="play-page/v2.jpg" alt="" class="cast-img" />
+          <span class="cast-title">Juno Temple</span>
+        </div>
+
+        <div class="cast-box">
+          <img src="play-page/v3.jpg" alt="" class="cast-img" />
+          <span class="cast-title">Rhys Ifans</span>
+        </div>
+
+        <div class="cast-box">
+          <img src="play-page/v4.jpg" alt="" class="cast-img" />
+          <span class="cast-title">Clark Backo</span>
+        </div>
+
+        <div class="cast-box">
+          <img src="play-page/v5.jpg" alt="" class="cast-img" />
+          <span class="cast-title">Chiwetel Ejiofor</span>
+        </div>
+
+        <div class="cast-box">
+          <img src="play-page/v6.jpg" alt="" class="cast-img" />
+          <span class="cast-title">Stephen Graham</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- download section -->
+    <div class="download">
+      <h2 class="download-title">Download Movies</h2>
+      <div class="download-links">
+        <a href="play-page/VENOM - THE LAST DANCE _ OFFICIAL HINDI TRAILER _ In Cinemas October 24.mp4" download>480p</a>
+        <a href="play-page/VENOM - THE LAST DANCE _ OFFICIAL HINDI TRAILER _ In Cinemas October 24.mp4" download>720p</a>
+        <a href="play-page/VENOM - THE LAST DANCE _ OFFICIAL HINDI TRAILER _ In Cinemas October 24.mp4" download>1080p</a>
+      </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="copyright">
+      <p>&#169; Movies Universe | All Right Reserved</p>
+    </div>
+
+    <!-- Link to Swiper JS -->
+    <!-- Swiper JS -->
+    <script src="JavaScript/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Link to JavaScript -->
+    <script src="JavaScript/App.js"></script>
+  </body>
+</html>
